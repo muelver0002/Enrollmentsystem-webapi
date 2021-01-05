@@ -202,6 +202,7 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\SDWebApiDbContext.cs" />
     <Compile Include="Models\Song.cs" />
+    <Compile Include="Models\Student.cs" />
     <Compile Include="Models\StudGrade\Course.cs" />
     <Compile Include="Models\StudGrade\Faculty.cs" />
     <Compile Include="Models\StudGrade\Student.cs" />
