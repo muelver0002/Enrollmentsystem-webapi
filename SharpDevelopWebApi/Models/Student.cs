@@ -16,10 +16,13 @@ namespace SharpDevelopWebApi.Models
 		public DateTime? BirthDate {get; set;}
 		public string Address {get; set;}
 		public string Gradelevl {get; set;}
+		public string LRNnumber {get ; set;}
 		public DateTime? DateEnrollment {get;set;}
+		
 		
 		public string FathersName {get; set;}
 		public string MothersName {get;set;}
+		
 		public string GuardiansName {get; set;}
 		public string Contact {get; set;}
 		
