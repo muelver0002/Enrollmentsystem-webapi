@@ -20,8 +20,7 @@ namespace SharpDevelopWebApi.Controllers
 		[HttpGet]
 		public IHttpActionResult Index()
 		{
-			
-			var enroll = new List<EnrollStud>();	
+			var enroll = _db.EnrollStuds.ToList();		
 			return Ok(enroll);
 		}
 		
