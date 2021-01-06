@@ -175,7 +175,6 @@
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\SampleController.cs" />
     <Compile Include="Controllers\SongController.cs" />
-    <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -198,12 +197,10 @@
     <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\EnrollStud.cs" />
     <Compile Include="Models\Patient.cs" />
-    <Compile Include="Models\Pers.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\SDWebApiDbContext.cs" />
     <Compile Include="Models\Song.cs" />
-    <Compile Include="Models\Stud.cs" />
     <Compile Include="Models\Subject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -232,13 +229,12 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>False</AutoAssignPort>
-          <DevelopmentServerPort>8083</DevelopmentServerPort>
+          <DevelopmentServerPort>8084</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:8083/</IISUrl>
+          <IISUrl>http://localhost:8084/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl></CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

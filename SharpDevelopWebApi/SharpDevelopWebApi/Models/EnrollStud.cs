@@ -26,8 +26,12 @@ namespace SharpDevelopWebApi.Models
 		public string GradeLevel {get; set;}
 		public DateTime? DateofEnroll{get; set;}
 		
+		
 		public string FathersName {get; set;}
+		public string Foccupation {get; set;}
+		
 		public string MothersName {get; set;}
+		public string Moccupation {get; set;}
 		public string GuardiansName {get; set;}
 		
 		public string LastSchoolattended {get; set;}
