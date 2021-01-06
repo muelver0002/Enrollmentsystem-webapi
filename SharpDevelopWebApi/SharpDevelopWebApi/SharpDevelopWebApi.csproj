@@ -170,15 +170,12 @@
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\EnrollmentController.cs" />
-    <Compile Include="Controllers\FacultyController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\SampleController.cs" />
     <Compile Include="Controllers\SongController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
-    <Compile Include="Controllers\SubjectController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -197,11 +194,9 @@
     <Compile Include="Helpers\UserAccount.cs" />
     <Compile Include="Controllers\Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\EnrollStud.cs" />
-    <Compile Include="Models\Faculty.cs" />
     <Compile Include="Models\Patient.cs" />
     <Compile Include="Models\Pers.cs" />
     <Compile Include="Models\Person.cs" />
@@ -209,7 +204,6 @@
     <Compile Include="Models\SDWebApiDbContext.cs" />
     <Compile Include="Models\Song.cs" />
     <Compile Include="Models\Stud.cs" />
-    <Compile Include="Models\StudentGrade.cs" />
     <Compile Include="Models\Subject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

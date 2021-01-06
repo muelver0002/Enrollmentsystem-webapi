@@ -21,9 +21,9 @@ namespace SharpDevelopWebApi.Models
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet <Song> Songs { get; set; }
         public DbSet <Stud> Student { get; set; }
-        public DbSet <Course> Courses { get; set;}
-        public DbSet <Faculty> Faculties { get; set;}
-        public DbSet <Subject> Subjects { get; set;}
+       
+       
+       
         
         
         public DbSet <EnrollStud> EnrollStuds {get; set;}

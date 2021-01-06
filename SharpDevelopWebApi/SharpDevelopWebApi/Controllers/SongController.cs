@@ -34,6 +34,8 @@ namespace SharpDevelopWebApi.Controllers
 		 
 		 
 		 //Get all records Method//
+		 
+		 
 		[HttpGet]
 		public IHttpActionResult GetAll(string Search="", string Artist="", int? year = null, int? peak = null)
 		{
