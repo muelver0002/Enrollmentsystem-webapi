@@ -79,5 +79,32 @@ namespace SharpDevelopWebApi.Controllers
 		}
 		
 		
+		
+		
+		
+		
+//		[HttpPut]
+//		public IHttpActionResult Update(Song updatedSong)
+//		{
+//			var song = _db.Songs.Find(updatedSong.Id);
+//			
+//			if(song !=null)
+//			{
+//			song.Title = updatedSong.Title;
+//			song.Artist = updatedSong.Artist;
+//			song.Genre=updatedSong.Genre;
+//			song.ReleaseYear = updatedSong.ReleaseYear;
+//			song.PeakChartPosition = updatedSong.PeakChartPosition;
+//			_db.Entry(song).State = System.Data.Entity.EntityState.Modified;
+//			_db.SaveChanges();
+//			return Ok(song);
+//			}
+//			else
+//				return BadRequest("Song not found!");
+//		}
+		
+		
+		
+		
 	}
 }
