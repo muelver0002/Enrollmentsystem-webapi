@@ -20,7 +20,7 @@ namespace SharpDevelopWebApi.Models
 		public string Firstname {get; set;}
 		public string LastName {get; set;}
 		public string MiddleName {get; set;}
-		public DateTime? Birthdate {get; set;}
+		public string Birthdate {get; set;}
 		public string Gender {get; set;}
 		public string Address {get; set;}
 		public string GradeLevel {get; set;}
