@@ -35,8 +35,18 @@ namespace SharpDevelopWebApi.Controllers
 				stud = _db.EnrollStuds.Where(x => x.GradeLevel.Contains(Search)).OrderBy(o => o.GradeLevel).ToList();
 			}
 			
+			
+			
+			
 			if(!string.IsNullOrWhiteSpace(Name))
 			{
+				if(string.IsNullOrWhiteSpace(Search))
+				
+			{
+			
+			  stud = _db.EnrollStuds.Where(x => x.Firstname.ToLower().Contains(Name.ToLower()) || x.LastName.ToLower().Contains(Name.ToLower()))
+				.OrderBy(o => o.Firstname).ToList();
+			}
 			
 				
 				stud = stud.Where(x => x.Firstname.ToLower().Contains(Name.ToLower()) || x.LastName.ToLower().Contains(Name.ToLower()))
@@ -55,7 +65,7 @@ namespace SharpDevelopWebApi.Controllers
 		public IHttpActionResult Create(EnrollStud NewStudent)
 		{
 			
-			NewStudent.DateofEnroll = DateTime.Now;
+			
 			_db.EnrollStuds.Add(NewStudent);
 			_db.SaveChanges();
 			return Ok(NewStudent);
@@ -83,25 +93,40 @@ namespace SharpDevelopWebApi.Controllers
 		
 		
 		
-//		[HttpPut]
-//		public IHttpActionResult Update(Song updatedSong)
-//		{
-//			var song = _db.Songs.Find(updatedSong.Id);
-//			
-//			if(song !=null)
-//			{
-//			song.Title = updatedSong.Title;
-//			song.Artist = updatedSong.Artist;
-//			song.Genre=updatedSong.Genre;
-//			song.ReleaseYear = updatedSong.ReleaseYear;
-//			song.PeakChartPosition = updatedSong.PeakChartPosition;
-//			_db.Entry(song).State = System.Data.Entity.EntityState.Modified;
-//			_db.SaveChanges();
-//			return Ok(song);
-//			}
-//			else
-//				return BadRequest("Song not found!");
-//		}
+		[HttpPut]
+		public IHttpActionResult Update(EnrollStud updatedstud)
+		{
+			var stud = _db.EnrollStuds.Find(updatedstud.Id);
+			
+			if(stud !=null)
+			{
+				stud.Firstname = updatedstud.Firstname;
+				stud.LastName = updatedstud.LastName;
+				stud.MiddleName = updatedstud.MiddleName;
+				stud.Birthdate = updatedstud.Birthdate;
+				stud.Gender = updatedstud.Gender;
+				stud.Address = updatedstud.Address;
+				stud.GradeLevel = updatedstud.GradeLevel;
+				stud.DateofEnroll = updatedstud.DateofEnroll;
+				stud.FathersName = updatedstud.FathersName;
+				stud.Foccupation = updatedstud.Foccupation;
+				stud.MothersName = updatedstud.MothersName;
+				stud.Moccupation = updatedstud.Moccupation;
+				stud.GuardiansName = updatedstud.GuardiansName;
+				stud.LastSchoolattended = updatedstud.LastSchoolattended;
+				stud.SchoolId = updatedstud.SchoolId;
+				stud.ContactNumberStud = updatedstud.ContactNumberStud;
+				stud.ContactNumber = updatedstud.ContactNumber;
+				
+				
+			
+			_db.Entry(stud).State = System.Data.Entity.EntityState.Modified;
+			_db.SaveChanges();
+			return Ok(stud);
+			}
+			else
+				return BadRequest("Song not found!");
+		}
 		
 		
 		

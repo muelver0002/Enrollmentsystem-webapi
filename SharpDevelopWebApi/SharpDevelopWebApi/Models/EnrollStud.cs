@@ -23,8 +23,9 @@ namespace SharpDevelopWebApi.Models
 		public string Birthdate {get; set;}
 		public string Gender {get; set;}
 		public string Address {get; set;}
+		public string ContactNumberStud {get; set;}
 		public string GradeLevel {get; set;}
-		public DateTime? DateofEnroll{get; set;}
+		public string DateofEnroll{get; set;}
 		
 		
 		public string FathersName {get; set;}
@@ -32,7 +33,9 @@ namespace SharpDevelopWebApi.Models
 		
 		public string MothersName {get; set;}
 		public string Moccupation {get; set;}
+		
 		public string GuardiansName {get; set;}
+		public string ContactNumber {get; set;}
 		
 		public string LastSchoolattended {get; set;}
 		public string SchoolId {get; set;}
